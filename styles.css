@@ -1,0 +1,149 @@
+body {
+    background-color: #fef6e4;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    color: #ff6b6b;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#shinchan {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Background Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background-color: rgba(173, 216, 230, 0.7);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 10s infinite linear;
+}
+
+.bubble:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 10%;
+    animation-duration: 12s;
+}
+
+.bubble:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    left: 20%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    left: 25%;
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 40%;
+    animation-duration: 14s;
+}
+
+.bubble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 55%;
+    animation-duration: 11s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    left: 70%;
+    animation-duration: 13s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+.bubble:nth-child(8) {
+    width: 60px;
+    height: 60px;
+    left: 90%;
+    animation-duration: 12s;
+    animation-delay: 6s;
+}
+.prt{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height:50px;
+    background-color:green ;
+    border-radius: 20px;
+}
+.btn{
+    width: 100%;
+    height:50px;
+border-radius: 5px;
+transition: all ease 0.3s;
+opacity: 0;
+
+}
+.btn:hover{
+         
+    opacity: 1;
+}
+
